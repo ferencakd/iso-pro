@@ -15,27 +15,33 @@
 </head>
 
 <body>
-    <div class="menu-btn">
-        <i class="fas fa-bars fa-2x"></i>
-    </div>
-    <div class="container">
-        <!-- navbar-->
-        <nav class="main-nav">
-            <img src="img/logo.png" alt="logo" class="logo">
+    <header class="masthead">
 
-            <ul class="main-menu">
-                <li><a href="#uberuns">Über uns</a></li>
-                <li><a href="#reference">Referenzen</a></li>
-                <li><a href="#fotogalerie">Fotogalerie</a></li>
-                <li><a href="#contact">Kontakt</a></li>
-            </ul>
-        </nav>
-        <!-- /navbar-->
-    </div>
+        <div class="menu-btn">
+            <i class="fas fa-bars fa-2x"></i>
+        </div>
+        <div class="container" id="ozadje">
+            <!-- navbar-->
+            <nav class="main-nav">
+                <img src="img/logo.png" alt="logo" class="logo">
+
+                <ul class="right-menu">
+                    <li><a href="#uberuns">Über uns</a></li>
+                    <li><a href="#reference">Referenzen</a></li>
+                    <li><a href="#fotogalerie">Fotogalerie</a></li>
+                    <li><a href="#contact">Kontakt</a></li>
+                </ul>
+            </nav>
+            <!-- /navbar-->
+        </div>
+
+    </header>
+    
     <script>
-        document.querySelector('.menu-btn').addEventListener('click', () => document.querySelector('.main-menu').classList.toggle('show'));
+        document.querySelector('.menu-btn').addEventListener('click', () => document.querySelector('.right-menu').classList.toggle('show'));
 
     </script>
+
 </body>
 
 </html>
